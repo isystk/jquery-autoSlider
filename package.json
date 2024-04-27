@@ -1,0 +1,45 @@
+{
+  "name": "jquery-autoSlider",
+  "version": "1.0.0",
+  "description": "jQueryで作成した汎用画像スライダーです。",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack serve --config webpack.config.js --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isystk/jquery-autoSlider.git"
+  },
+  "keywords": [],
+  "author": "isystk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isystk/jquery-autoSlider/issues"
+  },
+  "homepage": "https://github.com/isystk/jquery-autoSlider#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "path": "^0.12.7",
+    "postcss": "^8.4.33",
+    "postcss-loader": "^7.3.4",
+    "postcss-preset-env": "^9.3.0",
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "jquery": "^3.7.1",
+    "tailwindcss": "^3.4.1"
+  }
+}

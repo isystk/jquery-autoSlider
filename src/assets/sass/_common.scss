@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 10px;
+}
+
+body {
+  background-color: #666666;
+}
+
+.wrapper {
+  background-color: #fff;
+  margin: auto;
+  @media screen and (min-width: 980px) {
+    max-width: 1250px;
+    padding: 30px 60px;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 20%;
+}
+
+/* 自動スライダー */
+.auto-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.auto-slider ul.parent {
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  overflow-scrolling: touch;
+  will-change: transform;
+  transition: transform 1s linear;
+}
+
+.auto-slider li.child {
+  margin: 5px;
+  width: calc(100vw / 5);
+  display: inline-block;
+  overflow: hidden;
+}
+
+.auto-slider li img.zoom:hover {
+  transform:scale(1.2,1.2);
+  transition: 0.5s all;
+}
